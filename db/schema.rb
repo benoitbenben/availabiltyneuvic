@@ -16,24 +16,24 @@ ActiveRecord::Schema.define(version: 2018_06_01_130912) do
   enable_extension "plpgsql"
 
   create_table "bookings", force: :cascade do |t|
-    t.bigint "user_id_id"
-    t.bigint "house_id_id"
+    t.bigint "user_id"
+    t.bigint "house_id"
     t.date "start_on"
     t.date "end_on"
     t.string "status", default: "pending"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["house_id_id"], name: "index_bookings_on_house_id_id"
-    t.index ["user_id_id"], name: "index_bookings_on_user_id_id"
+    t.index ["house_id"], name: "index_bookings_on_house_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "houses", force: :cascade do |t|
-    t.bigint "user_id_id"
+    t.bigint "user_id"
     t.string "name"
     t.boolean "availability", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id_id"], name: "index_houses_on_user_id_id"
+    t.index ["user_id"], name: "index_houses_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
