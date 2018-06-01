@@ -2,12 +2,7 @@ class HousesController < ApplicationController
  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    if params[:query].present?
-      sql_query = "city ILIKE :query OR category ILIKE :query OR name ILIKE :query"
-      @houses = House.where(sql_query, query: "%#{params[:query]}%")
-    else
-      @houses = House.all
-    end
+    @houses = House.all
   end
 
   def show
