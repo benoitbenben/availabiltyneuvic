@@ -3,4 +3,14 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  has_many :bookings # as renter
+  has_many :costumes # as owner
+  has_many :received_bookings, through: :houses, source: :bookings #booking as an owner
+
+
+  validates :first_name, presence: true, uniqueness: true
 end
+
+
+
