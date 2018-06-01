@@ -9,7 +9,7 @@ class User < ApplicationRecord
   has_many :received_bookings, through: :houses, source: :bookings #booking as an owner
 
 
-  validates :first_name, presence: true, uniqueness: true
+  validates :email, presence: true, uniqueness: true
 end
 
 
