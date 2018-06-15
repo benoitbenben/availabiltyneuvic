@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :bookings # as renter
-  has_many :costumes # as owner
+  # has_many :costumes # as owner
   has_many :received_bookings, through: :houses, source: :bookings #booking as an owner
 
 
