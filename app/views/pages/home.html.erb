@@ -1,40 +1,18 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <h1>Pages#home</h1>
 
-<br>
-<br>
-<p> date picker </p>
-
-<br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br>
-
- <input type="text" class="form-control datepicker" value="14/06/2018">
- <input type="text" class="form-control datepicker" value="14/06/2018">
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-
-      <script src="bootstrap-datepicker.fr.min.js"></script>
-<!--
-        @ https://github.com/uxsolutions/bootstrap-datepicker/blob/master/dist/locales/bootstrap-datepicker.fr.min.js
-        !function(a){a.fn.datepicker.dates.fr={days:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],daysShort:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],daysMin:["d","l","ma","me","j","v","s"],months:["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],monthsShort:["janv.","févr.","mars","avril","mai","juin","juil.","août","sept.","oct.","nov.","déc."],today:"Aujourd'hui",monthsTitle:"Mois",clear:"Effacer",weekStart:1,format:"dd/mm/yyyy"}}(jQuery);
- -->
-      <script>
-        $('.datepicker').datepicker({
-          language: 'fr'
-        })
-      </script>
-
-
-
-
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-xs-6">
+       <%= image_tag "maisons.png", height: 400, width:600 %>
+    </div>
+    <div class="col-xs-3 col-xs-offset-3">
+      <%= link_to "Next", houses_path, class: "btn btn-success btn-block"  %>
+    </div>
+  <!-- <p> date picker </p> -->
+  </div>
+</div>
 
 
 

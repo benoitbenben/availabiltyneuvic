@@ -11,13 +11,17 @@ House.destroy_all
 User.destroy_all
 
 
-puts 'Creating users : ben@demo.fr'
+puts 'Creating users : ben@demo.fr, olivier@demo.fr'
 
 ben = User.create!(
   email: "ben@demo.fr",
-  password: "123456")
+  password: "123456",
+  name: "ben")
   # avatar: File.open(Rails.root.join("db/fixtures/users/bob.jpg")),
-
+olivier = User.create!(
+  email: "olivier@demo.fr",
+  password: "123456",
+  name: "olivier")
 
  puts 'Creating houses : grande & petite maison'
 
@@ -27,7 +31,7 @@ house1 = House.create!(
   # image: File.open(Rails.root.join("db/fixtures/costumes/ladybug.jpg")),
   availability: true,
   user: ben
-  )
+)
 house2 = House.create!(
   name: "Petite maison",
   # image: File.open(Rails.root.join("db/fixtures/costumes/ladybug.jpg")),
@@ -35,16 +39,26 @@ house2 = House.create!(
   user: ben
   )
 
-
  puts 'Creating bookings for users'
- booking1 = Booking.create!(
+
+booking1 = Booking.create!(
    user: ben,
    house: house1,
    start_on: "2018-04-25",
    end_on: "2018-04-26"
- )
-
-
+)
+booking2 = Booking.create!(
+   user: ben,
+   house: house1,
+   start_on: "2018-07-05",
+   end_on: "2018-07-16"
+)
+booking3 = Booking.create!(
+   user: olivier,
+   house: house2,
+   start_on: "2018-07-23",
+   end_on: "2018-07-28"
+)
 puts 'Finished...'
 
 # booking1 = Booking.create!(

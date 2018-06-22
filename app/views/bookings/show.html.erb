@@ -1,0 +1,27 @@
+<p> thanks to update your booking</p>
+
+
+
+<p>Name : <%= @house.name %></p>
+
+<div class="col-md-3">
+  <%= simple_form_for [@house, @booking] do |f| %>
+    <%= f.input :start_on %>
+    <%= f.input :end_on %>
+    <%= f.submit "Save", class: "btn btn-primary btn-block" %>
+  <% end %>
+</div>
+
+<!-- daterangepicker -->
+
+<input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+
+<script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+</script>

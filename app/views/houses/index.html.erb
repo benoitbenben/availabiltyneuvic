@@ -1,0 +1,22 @@
+
+<div class="wrapper-index-background">
+
+  <div class="container index-background">
+    <div class="index-title text-center">
+      <h1>Here is the list of all houses available</h1>
+    </div>
+    <div class="list-houses">
+      <div class="row">
+        <% @houses.each do |house| %>
+          <div class="card-name">
+            <%= house.name %>
+            <span>
+              <%= link_to "Book here now !", house_path(house), class: "btn btn-danger btn-block" %>
+            </span>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+

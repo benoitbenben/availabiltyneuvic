@@ -5,10 +5,10 @@ Rails.application.routes.draw do
 
   # par défaut nous sommes dans le cas du renter :
   resources :houses, only: [:index, :show] do
-    resources :bookings, only: :create
+    resources :bookings, only: [:index, :show, :create, :edit, :update, :destroy]
   end
 
-  resources :bookings, only: [:index, :show]
+  resources :bookings, only: [:index, :show, :edit, :update, :destroy]
 
   # profile utilisateur
   resource :profile, only: [:show, :edit, :update]

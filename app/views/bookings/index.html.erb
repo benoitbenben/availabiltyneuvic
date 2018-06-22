@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="index-title text-center">
+    <h1>List of all the bookings</h1>
+  </div>
+
+  <div class="background-white">
+    <% @bookings.each do |booking| %>
+      <div class="flat_card">
+        <div class="col-xs-6">
+          <p><%= booking.house.name %> by <strong> <%= booking.user.name.capitalize %></strong></p>
+        </div>
+        <div class="col-xs-6">
+          <p><%= booking.start_on %> - <%= booking.end_on %></p>
+        </div>
+                <div class="col-xs-6">
+
+         <%= link_to edit_booking_path(booking), class: "bottom-menu-element" do %>
+           <i class="fas fa-edit fa-2x bottom-menu-img"></i>
+           <br>
+           Edit booking
+         <% end %>
+        </div>
+        <div class="col-xs-6">
+
+         <%= link_to booking_path(booking), method: :delete,
+             data: { confirm: "Are you sure ?" }, class: "bottom-menu-element" do %>
+             <i class="fas fa-trash-alt fa-2x bottom-menu-img"></i>
+             <br>
+             Delete Room
+         <% end %>
+         </div>
+
+
+      </div>
+    <% end %>
+  </div>
+</div>

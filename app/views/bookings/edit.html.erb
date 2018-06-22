@@ -1,0 +1,14 @@
+<div class="text-center">
+  <br>
+  <h2>UPDATE YOUR BOOKING !</h2>
+  <br>
+
+    <%= simple_form_for (@booking) do |f| %>
+      <%= f.input :start_on %>
+      <%= f.input :end_on %>
+      <%= f.submit "Update", class: "btn btn-major" %>
+    <% end %>
+</div>
+
+
+
