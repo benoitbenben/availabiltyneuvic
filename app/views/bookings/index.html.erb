@@ -7,7 +7,7 @@
     <% @bookings.each do |booking| %>
       <div class="flat_card">
         <div class="col-xs-6">
-          <p><%= booking.house.name %> by <strong> <%= booking.user.name.capitalize %></strong></p>
+          <p><%= booking.house.name %> by <strong> <%= booking.user.name %></strong></p>
         </div>
         <div class="col-xs-6">
           <p><%= booking.start_on %> - <%= booking.end_on %></p>
