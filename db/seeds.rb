@@ -11,7 +11,7 @@ House.destroy_all
 User.destroy_all
 
 
-puts 'Creating users : ben@demo.fr, bruno@demo.fr, catherine@demo.fr, olivier@demo.fr, josephine@demo.fr,marieange@demo.fr, remi@demo.fr, francois@demo.fr, marie@demo.fr, marilou@demo.fr'
+puts 'Creating users : ben@demo.fr, ..'
 
 ben = User.create!(
   email: "ben@demo.fr",
@@ -24,8 +24,8 @@ bruno = User.create!(
   name: "bruno")
 
 catherine = User.create!(
-  email: catherine@demo.fr",
-  password: "123456,
+  email: "catherine@demo.fr",
+  password: "123456",
   name: "catherine")
 
 francois = User.create!(
