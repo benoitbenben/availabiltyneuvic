@@ -11,17 +11,56 @@ House.destroy_all
 User.destroy_all
 
 
-puts 'Creating users : ben@demo.fr, olivier@demo.fr'
+puts 'Creating users : ben@demo.fr, bruno@demo.fr, catherine@demo.fr, olivier@demo.fr, josephine@demo.fr,marieange@demo.fr, remi@demo.fr, francois@demo.fr, marie@demo.fr, marilou@demo.fr'
 
 ben = User.create!(
   email: "ben@demo.fr",
   password: "123456",
   name: "ben")
   # avatar: File.open(Rails.root.join("db/fixtures/users/bob.jpg")),
+bruno = User.create!(
+  email: "bruno@demo.fr",
+  password: "123456",
+  name: "bruno")
+
+catherine = User.create!(
+  email: catherine@demo.fr",
+  password: "123456,
+  name: "catherine")
+
+francois = User.create!(
+  email: "francois@demo.fr",
+  password: "123456",
+  name: "francois")
+
+marie = User.create!(
+  email: "marie@demo.fr",
+  password: "123456",
+  name: "marie")
+
 olivier = User.create!(
   email: "olivier@demo.fr",
   password: "123456",
   name: "olivier")
+josephine = User.create!(
+  email: "josephine@demo.fr",
+  password: "123456",
+  name: "josephine")
+
+marieange = User.create!(
+  email: "marieange@demo.fr",
+  password: "123456",
+  name: "marieange")
+
+remi = User.create!(
+  email: "remi@demo.fr",
+  password: "123456",
+  name: "remi")
+
+marilou = User.create!(
+  email: "marilou@demo.fr",
+  password: "123456",
+  name: "marilou")
 
  puts 'Creating houses : grande & petite maison'
 
