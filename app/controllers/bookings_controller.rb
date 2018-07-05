@@ -8,6 +8,7 @@ skip_before_action :authenticate_user!, only: :index
 
   def show
     @booking = Booking.find(params[:id])
+    #@ordered_bookings = @bookings.sort{|a,b| b.date <=> a.date}
   end
 
   def create
@@ -50,3 +51,4 @@ skip_before_action :authenticate_user!, only: :index
     params.require(:booking).permit(:start_on, :end_on)
   end
 end
+
