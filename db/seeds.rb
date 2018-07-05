@@ -67,13 +67,13 @@ marilou = User.create!(
 
 house1 = House.create!(
   name: "Grande maison",
-  # image: File.open(Rails.root.join("db/fixtures/costumes/ladybug.jpg")),
+  #image: File.open(Rails.root.join("db/fixtures/house1/ch-rose.jpg")),
   availability: true,
   user: ben
 )
 house2 = House.create!(
   name: "Petite maison",
-  # image: File.open(Rails.root.join("db/fixtures/costumes/ladybug.jpg")),
+  #image: File.open(Rails.root.join("db/fixtures/house2/ch-jardin-1er.jpg")),
   availability: true,
   user: ben
   )
