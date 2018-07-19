@@ -1,20 +1,52 @@
-<div class="container">
-  <h1>Bienvenue !</h1>
-  <p>Petite application pour renseigner les dates de vacances à Neuvic, afin de pouvoir savoir qui est là et quand. </p>
-  <div class="row">
-    <div class="col-xs-6">
-       <%= image_tag "maisons.png", height: 400, width:600 %>
+<html>
+  <body>
+    <div id="banner">
+      <h1>Bienvenue !</h1>
+      <p>Petite application pour renseigner les dates de vacances à Neuvic, afin de savoir qui est là et quand. </p>
+      <%= link_to "Commencer", houses_path, class: "btn btn-danger btn-lg"  %>
     </div>
-    <div class="col-xs-3 col-xs-offset-3">
-      <%= link_to "Next", houses_path, class: "btn btn-success btn-block"  %>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+           <%= image_tag "briefcase.png", height: 100 %>
+          <h2>Rapide</h2>
+          <p>A fast app, <strong>very fast</strong> app</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <%= image_tag "diamond.png", height: 100 %>
+            <h2>Simple</h2>
+            <p>A simple app, <strong>very simple</strong> app</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <%= image_tag "heart.png", height: 100 %>
+            <h2>Pratique</h2>
+            <p>An awesome app, <strong>very awesome</strong> app</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <%= image_tag "laptop.png", height: 100 %>
+            <h2>Jolie</h2>
+            <p>A beautiful app, <strong>very beautiful</strong> app</p>
+          </div>
+        </div>
+      </div>
     </div>
-  <!-- <p> date picker </p> -->
 
-  </div>
-</div>
-
-
-
-
-
+    <div id="footer">
+      <p>Copyright Benoît Mathonat SAS. 2018. Tout droit réservés</p>
+      <ul class="list-inline">
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+  </body>
+</html>
 
