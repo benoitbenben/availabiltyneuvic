@@ -1,14 +1,21 @@
-<p> please select date</p>
+<div class="container">
+  <div class="select" style="text-align: center">
+    <h2> Veuillez sélectionner les dates</h2>
 
+    <h3><%= @house.name.capitalize %></h3>
 
+    <%= simple_form_for [@house, @booking] do |f| %>
+      <div class="form-inputs col-xs-8 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3" >
+        <%= f.input :start_on %>
+        <%= f.input :end_on %>
+      </div>
 
-<p>Name : <%= @house.name %></p>
-
-<div class="col-xs-12 col-sm-6 col-md-3">
-  <%= simple_form_for [@house, @booking] do |f| %>
-    <%= f.input :start_on %>
-    <%= f.input :end_on %>
-    <%= f.submit "Save", class: "btn btn-primary btn-block" %>
-  <% end %>
+      <div class="form-actions col-xs-8 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3" >
+        <%= f.submit "Enregistrer", class: "btn btn-success btn-block" %>
+      </div>
+    <% end %>
+    <%= image_tag "calendrier.png", height: 200 %>
+  </div>
 </div>
+
 

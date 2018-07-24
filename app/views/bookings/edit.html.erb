@@ -1,14 +1,18 @@
-<div class="text-center">
-  <br>
-  <h2>UPDATE YOUR BOOKING !</h2>
-  <br>
-  <br>
-    <%= simple_form_for (@booking) do |f| %>
-      <%= f.input :start_on %>
-      <%= f.input :end_on %>
-      <%= f.submit "Update", class: "btn btn-major" %>
+<div class="container">
+  <div class="update" style="text-align: center">
+    <h2>Modifier les dates</h2>
+
+    <%= simple_form_for [@house, @booking] do |f| %>
+      <div class="form-inputs col-xs-8 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3" >
+        <%= f.input :start_on %>
+        <%= f.input :end_on %>
+      </div>
+
+      <div class="form-actions col-xs-8 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3" >
+        <%= f.submit "Update", class: "btn btn-danger btn-block" %>
+      </div>
     <% end %>
+
+    <%= image_tag "calendrier.png", height: 200 %>
+  </div>
 </div>
-
-
-
