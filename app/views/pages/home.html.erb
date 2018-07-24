@@ -1,6 +1,10 @@
 <html>
   <body>
-    <div id="banner">
+
+    <div class="banner text-center"
+  style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.2) 20%),
+  url(<%= image_path 'maison.jpg' %>)">
+
       <h1>Bienvenue !</h1>
       <p>Petite application pour renseigner les dates de vacances à Neuvic, afin de savoir qui est là et quand. </p>
       <%= link_to "Commencer", houses_path, class: "btn btn-danger btn-lg"  %>

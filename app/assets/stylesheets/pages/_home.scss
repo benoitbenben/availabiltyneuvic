@@ -25,7 +25,7 @@ a:hover {
   text-decoration: none;
   color: purple;
 }
-#banner{
+.banner{
   text-align: center;
   background-image: url("maison.jpg");
   background-size: cover;
@@ -34,11 +34,11 @@ a:hover {
   color: white;
   text-shadow: 1px 1px 5px black;
 }
-#banner h1 {
+.banner h1 {
   color: white;
   font-size: 50px;
 }
-#banner p {
+.banner p {
   color: white;
   opacity: 0.9;
   font-size: 30px;
@@ -51,7 +51,7 @@ a:hover {
 }
 .card{
   text-align: center;
-  padding: 50px;
+  padding: 8px;
   font-weight: lighter;
 }
 
