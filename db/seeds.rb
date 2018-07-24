@@ -64,19 +64,19 @@ marilou = User.create!(
 
  puts 'Creating houses : grande & petite maison'
 
-
 house1 = House.create!(
-  name: "Grande maison",
-  #image: File.open(Rails.root.join("db/fixtures/house1/ch-rose.jpg")),
-  availability: true,
-  user: ben
-)
-house2 = House.create!(
   name: "Petite maison",
-  #image: File.open(Rails.root.join("db/fixtures/house2/ch-jardin-1er.jpg")),
+  image: File.open(Rails.root.join("db/fixtures/house1/petite-maison.jpg")),
   availability: true,
   user: ben
   )
+house2 = House.create!(
+  name: "Grande maison",
+  image: File.open(Rails.root.join("db/fixtures/house2/grande-maison.jpg")),
+  availability: true,
+  user: ben
+)
+
 
  puts 'Creating bookings for users'
 

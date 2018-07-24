@@ -7,6 +7,7 @@
         <% @houses.each do |house| %>
           <div class="flatcard border border-primary">
             <h2><%= house.name %></h2>
+            <%= house.image %>
             <span>
               <%= link_to "Réservez-moi !", house_path(house), class: "btn btn-danger btn-block" %>
             </span>
@@ -17,3 +18,5 @@
   </div>
 </div>
 
+<!-- #TODO ajouter "image" dans la table pr photo differentes grande / petite maison (et chambres)
+link dejà créé ds seeds-->
