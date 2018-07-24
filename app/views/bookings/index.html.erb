@@ -10,7 +10,7 @@
           <br>
           <p><%= booking.house.name %> by <strong>
              <%= booking.user.name %></strong>
-             <%= booking.start_on %> - <%= booking.end_on %> Soit : <%= (1 + (booking.end_on - booking.start_on)).to_i %> nuits.</p>
+             <%= booking.start_on %> - <%= booking.end_on %> Soit : <%= ( + (booking.end_on - booking.start_on)).to_i %> nuits.</p>
 
           <%= link_to edit_booking_path(booking), class: "bottom-menu-element" do %>
             <i class="fas fa-edit fa-1x bottom-menu-img"></i>

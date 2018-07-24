@@ -9,9 +9,10 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
           <% @houses.each do |house| %>
-            <div class="card-name">
+            <div class="flatcard border border-primary">
               <%= house.name %>
-              <span>
+               <span>
+
                 <%= link_to "Réservez-moi !", house_path(house), class: "btn btn-danger btn-block" %>
               </span>
             </div>
@@ -22,7 +23,7 @@
 
     <!-- mettre les photos dans des cards -->
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="card">
           <%= image_tag "grenier.jpg", height: 100, width: 150 %>
@@ -47,7 +48,7 @@
         <div class="card">
           <%= image_tag "ch-rue-2ieme.jpg", height: 100, width: 150 %>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
