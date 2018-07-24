@@ -1,26 +1,19 @@
 
-<div class="wrapper-index-background">
-  <div class="container index-background">
-    <div class="index-title text-center">
-      <h1>Choix de la maison : </h1>
-    </div>
-    <div class="list-houses">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <% @houses.each do |house| %>
-            <div class="flatcard">
-              <%= house.name %>
-               <span>
-                <%= image_tag "petite-maison.jpg", height: 100 %>
-                <%= image_tag "grande-maison.jpg", height: 100 %>
-                <%= link_to "Réservez-moi !", house_path(house), class: "btn btn-danger btn-block" %>
-              </span>
-            </div>
-          <% end %>
-        </div>
+<div class="container text-center">
+  <h1>Choix de la maison  </h1>
+  <div class="list-houses">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <% @houses.each do |house| %>
+          <div class="flatcard border border-primary">
+            <h2><%= house.name %></h2>
+            <span>
+              <%= link_to "Réservez-moi !", house_path(house), class: "btn btn-danger btn-block" %>
+            </span>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
 </div>
-
 
