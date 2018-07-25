@@ -21,6 +21,7 @@ gem 'bundler'
 
 #gem cloudinary
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary'
 
 
 
