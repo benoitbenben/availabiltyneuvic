@@ -1,5 +1,5 @@
 class AddImageToHouses < ActiveRecord::Migration[5.2]
   def change
-    add_column :houses, :image, :string
+    add_column :houses, :photo, :string
   end
 end
