@@ -3,17 +3,22 @@
   <h1>Choix de la maison  </h1>
   <div class="list-houses">
     <div class="row">
-      <div class="col-xs-12 col-sm-4">
-        <% @houses.each do |house| %>
-          <div class="flatcard border border-primary">
+      <% @houses.each do |house| %>
+        <div class="col-xs-12 col-sm-4 col-sm-offset-1 list-inline">
+
+          <div class="flatcard card-container">
+
             <h2><%= house.name %></h2>
-              <%= house.photo, height:150) %>
-            <span>
-              <%= link_to "Réservez-moi !", house_path(house), class: "btn btn-danger btn-block" %>
-            </span>
+
+            <div class="photo">
+
+              <%= image_tag "maison", height:200; %>
+            </div>
+            <%= link_to "Réservez-moi !", house_path(house), class: "btn btn-danger btn-block" %>
           </div>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
+
     </div>
   </div>
 </div>
