@@ -66,13 +66,13 @@ marilou = User.create!(
 
 house1 = House.create!(
   name: "Petite maison",
-  image: File.open(Rails.root.join("db/fixtures/house1/petite-maison.jpg")),
+  photo: File.open(Rails.root.join("db/fixtures/house1/petite-maison.jpg")),
   availability: true,
   user: ben
   )
 house2 = House.create!(
   name: "Grande maison",
-  image: File.open(Rails.root.join("db/fixtures/house2/grande-maison.jpg")),
+  photo: File.open(Rails.root.join("db/fixtures/house2/grande-maison.jpg")),
   availability: true,
   user: ben
 )
@@ -87,7 +87,7 @@ booking1 = Booking.create!(
    end_on: "2018-04-26"
 )
 booking2 = Booking.create!(
-   user: ben,
+   user: bruno,
    house: house1,
    start_on: "2018-07-05",
    end_on: "2018-07-16"

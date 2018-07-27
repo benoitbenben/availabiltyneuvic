@@ -7,7 +7,7 @@
         <% @houses.each do |house| %>
           <div class="flatcard border border-primary">
             <h2><%= house.name %></h2>
-              <%= cl_image_tag(house.image, class: 'image') %>
+              <%= house.photo, height:150) %>
             <span>
               <%= link_to "Réservez-moi !", house_path(house), class: "btn btn-danger btn-block" %>
             </span>
