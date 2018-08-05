@@ -5,12 +5,13 @@
 
   <div class="background-white">
     <% @bookings.each do |booking| %>
-      <div class="flat_card">
-        <div class="col-xs-8 col-xs-offset-0">
-          <br>
-          <p><%= booking.house.name %> by <strong>
-             <%= booking.user.name %></strong>
-             <%= booking.start_on %> - <%= booking.end_on %> Soit : <%= ( + (booking.end_on - booking.start_on)).to_i %> nuit(s).</p>
+<!--         <div class="col-xs-8 col-xs-offset-0"> -->
+      <div class="col-xs-12 col-sm-4 col-sm-offset-1 list-inline">
+
+          <div class="flatcard card-container text-center">
+
+          <p><%= booking.start_on %> - <%= booking.end_on %> Soit : <%= (booking.end_on - booking.start_on).to_i %> nuit(s).</p>
+          <p><%= booking.house.name %> by <strong><%= booking.user.name %></strong></p>
 
           <%= link_to edit_booking_path(booking), class: "bottom-menu-element" do %>
             <i class="fas fa-edit fa-1x bottom-menu-img"></i>
@@ -26,5 +27,8 @@
         </div>
       </div>
     <% end %>
+
   </div>
 </div>
+
+
