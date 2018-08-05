@@ -8,6 +8,7 @@ class User < ApplicationRecord
   # has_many :costumes # as owner
   has_many :received_bookings, through: :houses, source: :bookings #booking as an owner
 
+  has_many :guests
 
   validates :email, presence: true, uniqueness: true
 end
