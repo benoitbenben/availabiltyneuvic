@@ -4,11 +4,11 @@ skip_before_action :authenticate_user!, only: :index
   def index
     @bookings = current_user.bookings
     @bookings = Booking.all
-    @rooms = current_user.all_rooms
-# tri par dates
-    @ordered_bookings = @bookings.sort{|a,b| b.date <=> a.date}
 
-    @yearly_grouped_bookings = @ordered_bookings.group_by{|booking| booking.date.year }
+# tri par dates
+    # @ordered_bookings = @bookings.sort{|a,b| b.date <=> a.date}
+
+    # @yearly_grouped_bookings = @ordered_bookings.group_by{|booking| booking.date.year }
 
   end
 

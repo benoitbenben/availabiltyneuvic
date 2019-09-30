@@ -15,7 +15,11 @@ faire une partial pour booking à la place de room card comme ds partypix
 
         <div class="flatcard card-container text-center">
 
-          <p><%= booking.start_on %> - <%= booking.end_on %> Soit : <%= (booking.end_on - booking.start_on).to_i %> nuit(s).</p>
+          <p><%= booking.start_on %> à <%= booking.end_on %>
+          Soit :
+                <%= 1  + (booking.end_on - booking.start_on).to_i  %>
+          nuit(s).</p>
+
           <p><%= booking.house.name %> by <strong><%= booking.user.name %></strong></p>
 
           <%= link_to edit_booking_path(booking), class: "bottom-menu-element" do %>
