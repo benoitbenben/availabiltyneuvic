@@ -9,11 +9,15 @@ skip_before_action :authenticate_user!, only: :index
     # @ordered_bookings = @bookings.sort{|a,b| b.date <=> a.date}
 
     # @yearly_grouped_bookings = @ordered_bookings.group_by{|booking| booking.date.year }
-
+#     start_date =
+#     start_time = Time.new(2013,1)
+# end_time = Time.new(2014,1)
+# TimeDifference.between(start_time, end_time).in_minutes
   end
 
   def show
     @booking = Booking.find(params[:id])
+
     #@ordered_bookings = @bookings.sort{|a,b| b.date <=> a.date}
   end
 
