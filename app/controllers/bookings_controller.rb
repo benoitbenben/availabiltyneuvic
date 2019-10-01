@@ -5,6 +5,7 @@ skip_before_action :authenticate_user!, only: :index
     @bookings = current_user.bookings
     @bookings = Booking.all
 
+
 # tri par dates
     # @ordered_bookings = @bookings.sort{|a,b| b.date <=> a.date}
 
