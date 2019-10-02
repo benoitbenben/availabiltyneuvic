@@ -20,14 +20,14 @@ faire une partial pour booking à la place de room card comme ds partypix
           <p><%= booking.house.name %> by <strong><%= booking.user.name %></strong></p>
 
           <%= link_to edit_booking_path(booking), class: "bottom-menu-element" do %>
-            <i class="fas fa-edit fa-1x bottom-menu-img"></i>
-           Edit booking
+            <i class="fas fa-edit fa-1x bottom-menu-img"> Edit booking</i>
+
           <% end %>
 
           <%= link_to booking_path(booking), method: :delete,
             data: { confirm: "Are you sure ?" }, class: "bottom-menu-element" do %>
-            <i class="fas fa-trash-alt fa-1x bottom-menu-img"></i>
-            Delete Booking
+            <i class="fas fa-trash-alt fa-1x bottom-menu-img">  Delete Booking</i>
+
           <% end %>
 
         </div>
