@@ -10,6 +10,6 @@ flatpickr("#start_date", {
   minDate: "today",
   altInput: true,
   altFormat: "F j, Y",
-  dateFormat: "Y-m-d",
+  dateFormat: "d-m-Y",
   plugins: [new rangePlugin({ input: "#end_date"})]
 })
