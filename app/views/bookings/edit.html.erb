@@ -6,11 +6,11 @@
     <div class="form-wrapper" style="width: 400px; margin: 0 auto;">
 
       <%= simple_form_for [@house, @booking] do |f| %>
-<!-- replace class: "datepicker" by id: start_date & id: end_date for range -->
-      <%= f.input :start_on, as: :string, required: false, input_html: {id: "start_date"} %>
-      <%= f.input :end_on, as: :string, required: false, input_html: {id: "end_date"} %>
-      <%= f.button :submit, "Update", class: "btn btn-danger btn-block" %>
-    <% end %>
+        <%= f.input :start_on, as: :string, required: false, input_html: {id: "start_date"} %>
+        <%= f.input :end_on, as: :string, required: false, input_html: {id: "end_date"} %>
+        <%= f.button :submit, "Update", class: "btn btn-danger btn-block" %>
+      <% end %>
+    </div>
   </div>
 </div>
 
