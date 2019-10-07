@@ -2,12 +2,28 @@
   "name": "availabilityneuvic",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5",
+    "@rails/webpacker": "^4.0.7",
+    "ajv": "^6.10.2",
     "bootstrap": "3",
     "flatpickr": "^4.6.3",
-    "jquery": "^3.4.0"
+    "ionic-native": "https://github.com/ionic-team/ionic-native/tarball/v3.5.0",
+    "jquery": "^3.4.0",
+    "js-yaml": "^3.13.1",
+    "os": "^0.1.1",
+    "webpacker": "^4.6.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "3.1.11"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-latest": "^6.24.1",
+    "coffee-loader": "^0.9.0",
+    "coffee-script": "^1.12.7",
+    "glob": "^7.1.4",
+    "path-complete-extname": "^1.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "rails-erb-loader": "^5.5.2",
+    "webpack": "^4.41.0",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-merge": "^4.2.2"
   }
 }
