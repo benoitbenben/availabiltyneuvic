@@ -8,7 +8,7 @@ gem 'puma'
 gem 'sassc-rails'
 gem 'sass-rails', require: false
 gem 'bootstrap-sass', '~> 3.4'
-gem 'font-awesome-sass', '~> 5.0.9'
+gem 'font-awesome-sass', '~> 5.8', '>= 5.8.1'
 gem 'rails', '~> 5.2.3'
 gem 'redis'
 
@@ -18,15 +18,13 @@ gem 'uglifier'
 gem 'webpacker', '~> 4.x'
 gem 'devise'
 gem 'figaro'
+gem 'therubyracer', :platforms => :ruby
 
 gem 'bundler'
-
 
 #gem cloudinary
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary'
-
-
 
 group :development do
   gem 'web-console', '>= 3.3.0'
