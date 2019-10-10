@@ -7,8 +7,7 @@
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
-<!--  flatpickr   <%= stylesheet_pack_tag 'application' %>
- -->
+    <%= stylesheet_pack_tag 'application' %>
 <!--  flatpickr
     <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
@@ -33,7 +32,6 @@
     <%= render 'shared/flashes' %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
-<!--  flatpickr   <%= javascript_pack_tag 'application' %>
- -->
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>
