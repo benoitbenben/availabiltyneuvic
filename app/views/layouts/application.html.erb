@@ -6,8 +6,15 @@
     <title>Neuvic</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
     <%= stylesheet_pack_tag 'application' %>
+
+
+
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 <!--  flatpickr
     <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
@@ -21,8 +28,8 @@
 
 
 <!-- pied de page et home page -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 
 
 
@@ -31,7 +38,5 @@
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
   </body>
 </html>

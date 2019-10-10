@@ -14,7 +14,8 @@ gem 'redis'
 
 gem 'autoprefixer-rails'
 gem 'simple_form'
-gem 'uglifier'
+# replace sprocket by webpacker
+#gem 'uglifier'
 gem 'webpacker', '~> 4.x'
 gem 'devise'
 gem 'figaro'

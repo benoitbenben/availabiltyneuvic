@@ -2,6 +2,8 @@
   "name": "availabilityneuvic",
   "private": true,
   "dependencies": {
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "^4.0.7",
     "ajv": "^6.10.2",
     "bootstrap": "3",
@@ -9,10 +11,12 @@
     "eslint": "^6.5.1",
     "flatpickr": "^4.6.3",
     "ionic-native": "https://github.com/ionic-team/ionic-native/tarball/v3.5.0",
-    "jquery": "^3.4.0",
+    "jquery": "^3.4.1",
     "js-yaml": "^3.13.1",
     "os": "^0.1.1",
+    "popper": "^1.0.1",
     "tui-calendar": "^1.12.5",
+    "turbolinks": "^5.2.0",
     "webpacker": "^4.6.0"
   },
   "devDependencies": {
