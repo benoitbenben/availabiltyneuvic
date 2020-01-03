@@ -15,7 +15,6 @@
     "js-yaml": "^3.13.1",
     "os": "^0.1.1",
     "popper": "^1.0.1",
-    "serialize-javascript": ">=2.1.1",
     "tui-calendar": "^1.12.5",
     "turbolinks": "^5.2.0",
     "webpacker": "^4.6.0"
@@ -31,7 +30,7 @@
     "path-complete-extname": "^1.0.0",
     "postcss-preset-env": "^6.7.0",
     "rails-erb-loader": "^5.5.2",
-    "serialize-javascript": ">=2.1.1",
+    "serialize-javascript": "^2.1.2",
     "webpack": "^4.41.0",
     "webpack-dev-server": "^3.8.2",
     "webpack-merge": "^4.2.2"
